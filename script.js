@@ -11,17 +11,17 @@ var prompts = [
 	class: 'group0'
 },
 {
-	prompt: 'Mi capita di vedere Alessandro Mauri senza notare quanto è elegante',
+	prompt: 'Mi capita di vedere Alemauri senza notare quanto è elegante',
 	weight: -1,
 	class: 'group1'
 },
 {
-	prompt: 'Bevo il caffè senza zucchero ma mangio 3 brioche alla crema se le portano',
+	prompt: 'Bevo il caffè senza zucchero ma mangio 3 brioche alla crema se le porta Katia',
 	weight: -1,
 	class: 'group2'
 },
 {
-	prompt: 'Evito di dire ecchecazzo se trovo occupato il bagno dello staff al primo piano',
+	prompt: 'Evito di dire ecchecazzo se trovo occupato da Ema il bagno dello staff al primo piano',
 	weight: -1,
 	class: 'group3'
 },
@@ -41,17 +41,17 @@ var prompts = [
 	class: 'group6'
 },
 {
-	prompt: 'Mi riesce facile unirmi a Camillo Frigeni e Alessando Mauri mentre conversano di Celine',
+	prompt: 'Mi riesce facile unirmi a Camillo e Stefano mentre conversano di Celine',
 	weight: 1,
 	class: 'group7'
 },
 {
-	prompt: 'Azzeccare cose a caso smanettando è meglio di organizzare task in Asana',
+	prompt: 'Azzeccare smanettando cose a caso come FFRA è meglio di pianificare task in Asana',
 	weight: 1,
 	class: 'group8'
 },
 {
-	prompt: 'Mi interessa di più che la Bongi non pianga piuttosto di aver ragione',
+	prompt: 'Mi interessa di più che Donato non pianga piuttosto di aver ragione',
 	weight: 1,
 	class: 'group9'
 },
@@ -72,27 +72,27 @@ var prompts = [
 // The stronger agreeance/disagreeance, the higher the weight on the user's answer to the prompt.
 var prompt_values = [
 {
-	value: "Assolutamente d'accordo ", 
+	value: "Sì Sì!", 
 	class: 'btn-default btn-strongly-agree',
 	weight: 5
 },
 {
-	value: "D'accordo",
+	value: "Eh sì",
 	class: 'btn-default btn-agree',
 	weight: 3,
 }, 
 {
-	value: 'Neutrale', 
+	value: 'Uguale', 
 	class: 'btn-default',
 	weight: 0
 },
 {
-	value: "Non d'accordo",
+	value: "Ma no",
 	class: 'btn-default btn-disagree',
 	weight: -3
 },
 { 
-	value: "Assolutamente in disaccordo",
+	value: "No No!",
 	class: 'btn-default btn-strongly-disagree',
 	weight: -5
 }
@@ -221,34 +221,25 @@ $('#submit-btn').click(function () {
 	// For each group, find the value that is active
 	$('.results').removeClass('hide');
 	$('.results').addClass('show');
+	$('.title').addClass('hide');
 	
 	if(total < 0) {
 		// document.getElementById('intro-bar').style.width = ((total / 60) * 100) + '%';
 		// console.log(document.getElementById('intro-bar').style.width);
 		// document.getElementById('intro-bar').innerHTML= ((total / 60) * 100) + '%';
-		document.getElementById('results').innerHTML = '<b>Sei un tantino musone!</b><br><br>\
-		Introverts are tricky to understand, since it’s so easy for us to assume that introversion is the same as being shy, when, in fact, introverts are simply people who find it tiring to be around other people.\n\
+		document.getElementById('results').innerHTML = "<b>Sei chius* come una COZZA!</b><br><br>\
+		Sei solo un po' timido, la tua conversazione preferita è con il lettore di temperatura. <br><br>\
+		Il bagno privato per lo staff è il tuo posto preferito. Sempre che sia libero.\n\
 <br><br>\
-I love this explanation of an introvert’s need to be alone:\n\
-<br><br>\
-For introverts, to be alone with our thoughts is as restorative as sleeping, as nourishing as eating.\n\n\
-<br><br>\
-Introverted people are known for thinking things through before they speak, enjoying small, close groups of friends and one-on-one time, needing time alone to recharge, and being upset by unexpected changes or last-minute surprises. Introverts are not necessarily shy and may not even avoid social situations, but they will definitely need some time alone or just with close friends or family after spending time in a big crowd.\
-		';
+		";
 	} else if(total > 0) {
-		document.getElementById('results').innerHTML = '<b>You are extroverted!</b><br><br>\
-		On the opposite side of the coin, people who are extroverted are energized by people. They usually enjoy spending time with others, as this is how they recharge from time spent alone focusing or working hard.\
-<br><br>\
-I like how this extrovert explains the way he/she gains energy from being around other people:\
-<br><br>\
-When I am among people, I make eye contact, smile, maybe chat if there’s an opportunity (like being stuck in a long grocery store line). As an extrovert, that’s a small ‘ping’ of energy, a little positive moment in the day.';
+		document.getElementById('results').innerHTML = '<b>Sei apert* come una CAPASANTA!</b><br><br>\
+		Rincorri i tuoi colleghi per i corridoi, controlli i compleanni per i pasticcini, ti vestiresti come una drag queen mattina e pomeriggio.\
+';
 	} else {
-		document.getElementById('results').innerHTML = '<b>You are ambiverted!</b><br><br>\
-		Since introverts and extroverts are the extremes of the scale, the rest of us fall somewhere in the middle. Many of us lean one way or the other, but there are some who are quite balanced between the two tendencies. These people are called ambiverts.\
-<br><br>\
-So let’s look at how an ambivert compares.\
-<br><br>\
-Ambiverts exhibit both extroverted and introverted tendencies. This means that they generally enjoy being around people, but after a long time this will start to drain them. Similarly, they enjoy solitude and quiet, but not for too long. Ambiverts recharge their energy levels with a mixture of social interaction and alone time.'
+		document.getElementById('results').innerHTML = '<b>Sei mezz* COZZA e mezz* CAPASANTA!</b><br><br>\
+		Mangi mezzo pasticcino ai compleanni, vesti elegante o almeno ti pettini agli Open Day, hai aperto una volta Asana anche se per sbaglio.\
+'
 	}
 
 	// Hide the quiz after they submit their results
