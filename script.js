@@ -6,7 +6,7 @@
 
 var prompts = [
 {
-	prompt: 'Faccio fatica a rispondere a Camilla che al mattino mi barrisce BUONGIORNO!!!',
+	prompt: 'Faccio fatica a rispondere a Camilla che al mattino mi barrisce: BUONGIORNO!!!',
 	weight: -1,
 	class: 'group0'
 },
