@@ -36,7 +36,7 @@ var prompts = [
 	class: 'group5'
 },
 {
-	prompt: 'Sono spesso energico e reattivo come Marcella',
+	prompt: 'Mi sento spesso energico e reattivo come una Marcella',
 	weight: 1,
 	class: 'group6'
 },
