@@ -11,7 +11,7 @@ var prompts = [
 	class: 'group0'
 },
 {
-	prompt: 'Mi capita di vedere Alemauri senza notare quanto è elegante',
+	prompt: 'Mi capita di incontrare Alemauri senza notare quanto è elegante',
 	weight: -1,
 	class: 'group1'
 },
@@ -46,7 +46,7 @@ var prompts = [
 	class: 'group7'
 },
 {
-	prompt: 'Azzeccare smanettando cose a caso come FFRA è meglio di pianificare task in Asana',
+	prompt: 'Bloccare la stampante smanettando cose a caso è meglio di chiedere un consiglio ad Alberto',
 	weight: 1,
 	class: 'group8'
 },

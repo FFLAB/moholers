@@ -97,3 +97,8 @@ background: linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10
 	max-width: 100%;
 	height: auto;
 }
+.credits{
+	font-size: 15px;
+	color: rgba(14, 13, 13, 0.609);
+	padding: 30px;
+}
