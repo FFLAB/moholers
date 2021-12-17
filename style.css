@@ -97,11 +97,7 @@ img{
 	margin-bottom: 40px;
 	margin-top: 40px;
 }
-.image{
-	width: 50%;
-	max-width: 100%;
-	height: auto;
-}
+
 .credits{
 	font-size: 15px;
 	color: rgba(14, 13, 13, 0.609);
