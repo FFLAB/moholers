@@ -9,6 +9,7 @@ body{
     background: linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+.title{font-size: 60px;}
 .btn{font-size: 18px !important;}
 
 .prompt {
@@ -100,5 +101,5 @@ body{
 .credits{
 	font-size: 15px;
 	color: rgba(14, 13, 13, 0.609);
-	padding: 30px;
+	margin-top: 15px;
 }
