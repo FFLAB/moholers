@@ -9,6 +9,10 @@ body{
     background: linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+img{
+	max-width: 100%;
+	height: auto;
+}
 .title{font-size: 60px;}
 .btn{font-size: 18px !important;}
 
