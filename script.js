@@ -227,16 +227,22 @@ $('#submit-btn').click(function () {
 		// document.getElementById('intro-bar').style.width = ((total / 60) * 100) + '%';
 		// console.log(document.getElementById('intro-bar').style.width);
 		// document.getElementById('intro-bar').innerHTML= ((total / 60) * 100) + '%';
+		$('#capa').addClass('hide');
+		$('#cozza').addClass('show');
 		document.getElementById('results').innerHTML = "<h1>Sei chius* come una COZZA!</h1><br><br>\
 		Sei solo un po' timido, la tua conversazione preferita è con il lettore di temperatura. <br><br>\
 		Il bagno privato per lo staff è il tuo posto preferito. Sempre che sia libero.\n\
 <br><br>\
 		";
 	} else if(total > 0) {
+		$('#cozza').addClass('hide');
+		$('#capa').addClass('show');
 		document.getElementById('results').innerHTML = '<h1>Sei apert* come una CAPASANTA!</h1><br><br>\
 		Rincorri i tuoi colleghi per i corridoi, controlli i compleanni per i pasticcini,<br>\ ti vestiresti come una drag queen mattina e pomeriggio.\
 ';
 	} else {
+		$('#capa').addClass('show');
+		$('#cozza').addClass('show');
 		document.getElementById('results').innerHTML = '<h1>Sei mezz* COZZA e mezz* CAPASANTA!</h1><br><br>\
 		Mangi almeno mezzo pasticcino ai compleanni, vesti decentemente o almeno ti pettini agli Open Day,<br><br>\ hai aperto una volta Asana anche se per sbaglio.\
 '
@@ -244,7 +250,7 @@ $('#submit-btn').click(function () {
 
 	// Hide the quiz after they submit their results
 	$('#quiz').addClass('hide');
-	$('#imgs').addClass('hide');
+	// $('#imgs').addClass('hide');
 	$('#submit-btn').addClass('hide');
 	$('#retake-btn').removeClass('hide');
 	
@@ -253,11 +259,16 @@ $('#submit-btn').click(function () {
 // Refresh the screen to show a new quiz if they click the retake quiz button
 $('#retake-btn').click(function () {
 	$('#quiz').removeClass('hide');
-	$('#imgs').removeClass('hide');
+	// $('#imgs').removeClass('hide');
 	$('#imgs').addClass('show');
 	$('#submit-btn').removeClass('hide');
 	$('#retake-btn').addClass('hide');
-
+	$('.title').removeClass('hide');
 	$('.results').addClass('hide');
 	$('.results').removeClass('show');
+	$('#capa').removeClass('show');
+	$('#capa').addClass('hide');
+	$('#cozza').removeClass('show');
+	$('#cozza').addClass('hide');
+	
 })
