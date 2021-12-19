@@ -229,22 +229,22 @@ $('#submit-btn').click(function () {
 		// document.getElementById('intro-bar').innerHTML= ((total / 60) * 100) + '%';
 		$('#capa').addClass('hide');
 		$('#cozza').addClass('show');
-		document.getElementById('results').innerHTML = "<h1>Sei chius* come una COZZA!</h1><br><br>\
-		Sei solo un po' timido, la tua conversazione preferita è con il lettore di temperatura. <br><br>\
+		document.getElementById('results').innerHTML = "<h1>Sei chius* come una COZZA!</h1>\
+		Sei solo un po' timido, la tua conversazione preferita è con il lettore di temperatura. <br>\
 		Il bagno privato per lo staff è il tuo posto preferito. Sempre che sia libero.\n\
 <br><br>\
 		";
 	} else if(total > 0) {
 		$('#cozza').addClass('hide');
 		$('#capa').addClass('show');
-		document.getElementById('results').innerHTML = '<h1>Sei apert* come una CAPASANTA!</h1><br><br>\
+		document.getElementById('results').innerHTML = '<h1>Sei apert* come una CAPASANTA!</h1>\
 		Rincorri i tuoi colleghi per i corridoi, controlli i compleanni per i pasticcini,<br>\ ti vestiresti come una drag queen mattina e pomeriggio.\
 ';
 	} else {
 		$('#capa').addClass('show');
 		$('#cozza').addClass('show');
-		document.getElementById('results').innerHTML = '<h1>Sei mezz* COZZA e mezz* CAPASANTA!</h1><br><br>\
-		Mangi almeno mezzo pasticcino ai compleanni, vesti decentemente o almeno ti pettini agli Open Day,<br><br>\ hai aperto una volta Asana anche se per sbaglio.\
+		document.getElementById('results').innerHTML = '<h1>Sei mezz* COZZA e mezz* CAPASANTA!</h1>\
+		Mangi almeno mezzo pasticcino ai compleanni, vesti decentemente o almeno ti pettini agli Open Day,<br>\ hai aperto una volta Asana anche se per sbaglio.\
 '
 	}
 
